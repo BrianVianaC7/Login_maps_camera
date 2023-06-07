@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VCamera">
+
+    <TextView
+        android:id="@+id/redebal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/purple_500"
+        android:textSize="24sp" />
+    <TextView
+        android:id="@+id/txt_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redebal"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Camera"
+        android:textColor="@color/purple_500"
+        android:textSize="32sp" />
+
+    <ImageView
+        android:id="@+id/img_foto"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/txt_titulo"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="CAMARA"
+        android:layout_marginTop="20dp"
+        android:id="@+id/bt_camara"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:background="@drawable/boton_r"
+        android:layout_below="@+id/img_foto" />
+
+</RelativeLayout>
